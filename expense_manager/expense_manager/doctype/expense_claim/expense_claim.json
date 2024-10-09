@@ -42,7 +42,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Status",
-   "options": "Submitted\nUnder Review\nApproved\nRejected",
+   "options": "Draft\nSubmitted\nUnder Review\nApproved\nRejected",
    "reqd": 1
   },
   {
@@ -66,7 +66,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-10-06 15:43:00.504094",
+ "modified": "2024-10-09 00:03:29.119369",
  "modified_by": "Administrator",
  "module": "Expense Manager",
  "name": "Expense Claim",
@@ -103,6 +103,16 @@
   {
    "email": 1,
    "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manager",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
    "print": 1,
    "read": 1,
    "report": 1,

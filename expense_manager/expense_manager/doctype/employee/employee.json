@@ -8,13 +8,9 @@
  "engine": "InnoDB",
  "field_order": [
   "first_name",
-  "email",
-  "joining_date",
-  "column_break_cccx",
   "last_name",
-  "contact_number",
-  "designation",
-  "status"
+  "email",
+  "contact_number"
  ],
  "fields": [
   {
@@ -39,37 +35,14 @@
    "reqd": 1
   },
   {
-   "fieldname": "designation",
-   "fieldtype": "Select",
-   "label": "Designation",
-   "options": "Manager\nStaff",
-   "reqd": 1
-  },
-  {
    "fieldname": "contact_number",
    "fieldtype": "Phone",
    "label": "Contact Number"
-  },
-  {
-   "fieldname": "joining_date",
-   "fieldtype": "Date",
-   "label": "Joining Date"
-  },
-  {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Active\nInactive",
-   "reqd": 1
-  },
-  {
-   "fieldname": "column_break_cccx",
-   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-06 14:27:26.669892",
+ "modified": "2024-10-08 23:55:01.181853",
  "modified_by": "Administrator",
  "module": "Expense Manager",
  "name": "Employee",
@@ -85,6 +58,17 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
    "share": 1,
    "write": 1
   }

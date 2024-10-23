@@ -7,26 +7,14 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "first_name",
-  "last_name",
+  "full_name",
+  "joining_date",
   "email",
-  "contact_number"
+  "column_break_vnut",
+  "contact_number",
+  "department"
  ],
  "fields": [
-  {
-   "fieldname": "first_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "First Name",
-   "reqd": 1
-  },
-  {
-   "fieldname": "last_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Last Name",
-   "reqd": 1
-  },
   {
    "fieldname": "email",
    "fieldtype": "Data",
@@ -38,11 +26,32 @@
    "fieldname": "contact_number",
    "fieldtype": "Phone",
    "label": "Contact Number"
+  },
+  {
+   "fieldname": "joining_date",
+   "fieldtype": "Date",
+   "label": "Joining Date"
+  },
+  {
+   "fieldname": "column_break_vnut",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-08 23:55:01.181853",
+ "modified": "2024-10-20 12:57:29.084730",
  "modified_by": "Administrator",
  "module": "Expense Manager",
  "name": "Employee",
@@ -73,7 +82,9 @@
    "write": 1
   }
  ],
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "full_name"
 }
